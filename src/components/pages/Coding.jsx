@@ -8,7 +8,7 @@ render() {
       return <div className='page'>
       <h2 className="page-item subtitle">Ball Game</h2>
         <div className="page-item">
-          {!this.props.isMobile ? <MainWindow /> : <p className="page-text">You're viewing this from mobile, you can view the game hosted seperatly <a href='https://tom-wallwin-ball-game.netlify.app/'>here</a>.</p>}
+          {!this.props.isMobile ? <MainWindow /> : <p className="page-text">You're viewing this from mobile, you can view the game hosted separately <a href='https://tom-wallwin-ball-game.netlify.app/'>here</a>.</p>}
           <p className="page-text">This ball game is a small project I made using HTML canvas, try clicking in the box to add a ball. You might notice the collision system isn't perfect yet.<br/> <br/> This is the github repo: <a href='https://github.com/TWallwin/shapes'>click here</a></p>
         </div>
         <h2 className="page-item subtitle">News Website</h2>
