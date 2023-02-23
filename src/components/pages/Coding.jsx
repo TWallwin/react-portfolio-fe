@@ -33,7 +33,7 @@ render() {
             <a
               className="external-link"
               href="https://github.com/TWallwin/fe-nc-news"
-              >Click here </a
+              > Click here </a
             > 
              for the github repo.
           </p>
@@ -63,7 +63,7 @@ render() {
             <a
               className="external-link"
               href="https://github.com/TWallwin/nc-portfolio-fe"
-              >Click here</a
+              >Click here </a
             >
             for the github repo.
           </p>
