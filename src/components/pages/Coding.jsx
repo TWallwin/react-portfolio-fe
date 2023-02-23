@@ -4,7 +4,7 @@ import React from 'react';
 export default class Coding extends React.Component{
 
     render() { 
-        return <>
+        return <div className='page'>
         <h2 className="page-item subtitle">News Website</h2>
         <div className="page-item">
           <p className="page-text">
@@ -67,6 +67,6 @@ export default class Coding extends React.Component{
                     title="video app"
           ></iframe>
         </div>
-      </>
+      </div>
     }
 }

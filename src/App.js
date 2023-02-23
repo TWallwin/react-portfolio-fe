@@ -1,19 +1,21 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Header from "./components/Header"
-import About from "./components/pages/About"
-import Coding from "./components/pages/Coding"
-import Contact from "./components/pages/Contact"
+import DesktopRoutes from "./components/routers/DesktopRoutes";
+import { useDesktopMediaQuery } from "./helpers/mediaQueryHelpers";
+import MobileRoutes from "./components/routers/MobileRoutes";
 
 function App() {
+  const isDesktop = useDesktopMediaQuery()
+
   return (
     <BrowserRouter>
       <div className="App">
         <Header />
-        <Routes>
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/coding" element={<Coding />} />
-          <Route exact path="/contact" element={<Contact />} />
-        </Routes>
+        <main>
+        <div className='pages'>
+            {isDesktop ? <DesktopRoutes /> : <MobileRoutes />}
+          </div>
+          </main>
       </div>
     </BrowserRouter>
   );

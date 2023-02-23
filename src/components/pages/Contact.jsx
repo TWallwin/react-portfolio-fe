@@ -4,7 +4,7 @@ import React from 'react';
 export default class Contact extends React.Component{
 
     render() { 
-        return <> <div className="page" data-page="3">
+        return <div className="page">
         <h2 className="page-item subtitle">Find Me</h2>
         <div className="page-item grid">
           <div className="flip-card">
@@ -48,6 +48,6 @@ export default class Contact extends React.Component{
             </div>
           </div>
         </div>
-      </div></>
+      </div>
     }
 }
