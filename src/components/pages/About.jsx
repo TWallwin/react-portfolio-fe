@@ -12,9 +12,11 @@ export default class About extends React.Component{
                         <img src={picture} className="self-image" alt="" />
             </div>
             <p className="page-text">
-              I'm a javascript developer looking for an oppourtunity to continue to build on my skillset.<br/>
-              I've got 8 months professional experience as a developer working on a webapp using React and HTML canvas.
-              <br/>
+              I'm a javascript developer looking for an oppourtunity to continue to build on my skillset.<br /> <br />
+              Before I was a developer my background in programming was from an undergraduate maths degree. I learned the basics of full stack web development on Northcoders a year ago.
+              <br/><br/>
+              I've now got 8 months professional frontend experience as a developer working using React and HTML canvas.
+              <br/> <br/>
               Apart from coding I go outside climbing or running and play
               football.
             </p>

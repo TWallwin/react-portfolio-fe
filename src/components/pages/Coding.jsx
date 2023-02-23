@@ -1,10 +1,16 @@
 import React from 'react';
+import MainWindow from '../game/MainWindow';
 
 
 export default class Coding extends React.Component{
 
-    render() { 
-        return <div className='page'>
+render() { 
+      return <div className='page'>
+      <h2 className="page-item subtitle">Ball Game</h2>
+        <div className="page-item">
+          {!this.props.isMobile ? <MainWindow /> : <p className="page-text">You're viewing this from mobile, you can view the game hosted seperatly <a href='https://tom-wallwin-ball-game.netlify.app/'>here</a>.</p>}
+          <p className="page-text">This ball game is a small project I made using HTML canvas, try clicking in the box to add a ball. You might notice the collision system isn't perfect yet.<br/> <br/> This is the github repo: <a href='https://github.com/TWallwin/shapes'>click here</a></p>
+        </div>
         <h2 className="page-item subtitle">News Website</h2>
         <div className="page-item">
           <p className="page-text">
@@ -20,16 +26,16 @@ export default class Coding extends React.Component{
             <a
               className="external-link"
               href="https://twallwin-nc-news.netlify.app/"
-              >click here</a
-            >
+              > click here </a
+            > 
             to view it.
 
             <a
               className="external-link"
               href="https://github.com/TWallwin/fe-nc-news"
-              >Click here</a
-            >
-            for the github repo.
+              >Click here </a
+            > 
+             for the github repo.
           </p>
           <iframe
             src="https://player.vimeo.com/video/699496078?h=feb410f928" title ="new website"

@@ -307,3 +307,23 @@ main {
     font-size: medium;
   }
 }}
+
+/* game */
+.main-window {
+  height: 60vh;
+  width: min(60vw, 800px);
+  border: solid black 2px;
+  border-radius: 5px;
+}
+
+.window-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#shapeCanvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}

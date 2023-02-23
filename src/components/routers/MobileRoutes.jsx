@@ -4,6 +4,6 @@ const{About, Coding, Contact} = pages
 export default function MobileRoutes() {
     return <><About />
         <Contact />
-        <Coding />
+        <Coding isMobile/>
     </>
 }
