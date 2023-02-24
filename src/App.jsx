@@ -10,7 +10,7 @@ function App() {
   const isDesktop = useDesktopMediaQuery()
 
   const scrollRef = useRef(null);
-  useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
+  useScrollSnap({ ref: scrollRef, duration: 50, delay: 100 });
 
   return (
     <BrowserRouter>
