@@ -245,13 +245,21 @@ main {
   .name-header{
     font-size: min(28vw);
   }
-  
+  html{ 
+    scroll-snap-type: y mandatory;
+  max-height: 100vh;
+  overflow-y: scroll;
+  }
   .nav-bar {
     height:100vh;
+    scroll-snap-align: start;
     flex-direction: column;
     align-items: flex-start;
   }
-
+  
+main{
+  scroll-snap-align: start;
+}
   .link-spread-container {
     display: none;
   }

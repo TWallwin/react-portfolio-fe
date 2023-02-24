@@ -3,18 +3,14 @@ import Header from "./components/Header"
 import DesktopRoutes from "./components/routers/DesktopRoutes";
 import { useDesktopMediaQuery } from "./helpers/mediaQueryHelpers";
 import MobileRoutes from "./components/routers/MobileRoutes";
-import useScrollSnap from 'react-use-scroll-snap';
-import { useRef } from 'react'
 
 function App() {
   const isDesktop = useDesktopMediaQuery()
 
-  const scrollRef = useRef(null);
-  useScrollSnap({ ref: scrollRef, duration: 50, delay: 100 });
 
   return (
     <BrowserRouter>
-      <div className="App" ref={scrollRef} >
+      <div className="App" >
         <Header />
         <main>
         <div className='pages'>
