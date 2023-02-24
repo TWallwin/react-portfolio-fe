@@ -38,7 +38,7 @@ render() {
              for the github repo.
           </p>
           <iframe
-            src="https://player.vimeo.com/video/699496078?h=feb410f928" title ="new website"
+            src="https://player.vimeo.com/video/699496078?h=feb410f928" title="new website"
         />
         </div>
         <h2 className="page-item subtitle">Video Uploading App - NC Portfolio</h2>
