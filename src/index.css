@@ -246,7 +246,7 @@ main {
     font-size: min(28vw);
   }
   html{ 
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
   max-height: 100vh;
   overflow-y: scroll;
   }
@@ -256,7 +256,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
 main{
   scroll-snap-align: start;
 }
