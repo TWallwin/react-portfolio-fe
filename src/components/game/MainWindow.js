@@ -81,14 +81,15 @@ export default class MainWindow extends React.Component {
     const rect = canvas.getBoundingClientRect();
 
     return {
-      x: evt.pageX - rect.left,
-      y: evt.pageY - rect.top,
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top,
     };
   }
 
   clearCanvas() {
     const canvas = this.getCanvasRef();
     const canvasContext = getCanvasContext(canvas)
+    
     if(!canvasContext) return 
     canvasContext.clearRect(0, 0, canvas.width, canvas.height);
   }
