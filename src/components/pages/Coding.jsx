@@ -1,7 +1,6 @@
 import React from 'react';
 import MainWindow from '../game/MainWindow';
 
-
 export default class Coding extends React.Component{
 
 render() { 
